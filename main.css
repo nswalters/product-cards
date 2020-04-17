@@ -1,12 +1,69 @@
 body {
-  background-color: antiquewhite;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+body h1 {
+  text-align: center;
 }
 
 .container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .card {
   flex-basis: 30%;
+  box-shadow: 1px 1px #888888;
+  margin: 10px auto;
+  border: 1px solid lightblue;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  border: 1px dotted darkgrey;
+}
+
+.title h2 {
+  margin: 10px auto;
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.product-description {
+  text-align: justify;
+  margin: 10px;
+}
+
+.section.specifications header,
+.section.specifications p,
+.section.pricing header,
+.section.pricing p {
+  margin: 10px;
+}
+
+.section.specifications p,
+.section.pricing p {
+  font-weight: bold;
+  font-size: small;
+  text-indent: 10px;
+}
+
+.section.header.h3 {
+  font-weight: normal;
+}
+
+.product-availability {
+  display: flex;
+  width: 100%;
+  background-color: darkgrey;
+  color: yellow;
+  margin: 0 !important;
 }
